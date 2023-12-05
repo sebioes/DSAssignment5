@@ -29,7 +29,11 @@ Ans:
 # Task 2
 
 Indicate the replies that you get from the "/admin/status" endpoint of the HTTP service for each servers. Which server is the leader? Can there be multiple leaders?
+
 Ans: 
+
+Perform a Put request for the key ``a" on the leader. What is the new status? What changes occurred and why (if any)?
+
 Ans:
 
 Perform an Append request for the key ``a" on the leader. What is the new status? What changes occurred and why (if any)?
