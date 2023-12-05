@@ -28,19 +28,19 @@ Ans:
 
 # Task 2
 
-Indicate the replies that you get from the "/admin/status" endpoint of the HTTP service for each servers. Which server is the leader? Can there be multiple leaders?
+1. Indicate the replies that you get from the "/admin/status" endpoint of the HTTP service for each servers. Which server is the leader? Can there be multiple leaders?
 
 Ans: 
 
-Perform a Put request for the key ``a" on the leader. What is the new status? What changes occurred and why (if any)?
+2. Perform a Put request for the key ``a" on the leader. What is the new status? What changes occurred and why (if any)?
 
 Ans:
 
-Perform an Append request for the key ``a" on the leader. What is the new status? What changes occurred and why (if any)?
+3. Perform an Append request for the key ``a" on the leader. What is the new status? What changes occurred and why (if any)?
 
 Ans: 
 
-Perform a Get request for the key ``a" on the leader. What is the new status? What change (if any) happened and why?
+4. Perform a Get request for the key ``a" on the leader. What is the new status? What change (if any) happened and why?
 
 Ans:
 
@@ -48,27 +48,27 @@ Ans:
 
 # Task 3
 
-Shut down the server that acts as a leader. Report the status that you get from the servers that remain active after shutting down the leader.
+1. Shut down the server that acts as a leader. Report the status that you get from the servers that remain active after shutting down the leader.
 
 Ans:
 
- Perform a Put request for the key "a". Then, restart the server from the previous point, and indicate the new status for the three servers. Indicate the result of a Get request for the key ``a" to the previous leader.
+ 2. Perform a Put request for the key "a". Then, restart the server from the previous point, and indicate the new status for the three servers. Indicate the result of a Get request for the key ``a" to the previous leader.
 
 Ans:
 
-Has the Put request been replicated? Indicate which steps lead to a new election and which ones do not. Justify your answer using the statuses returned by the servers.
+3. Has the Put request been replicated? Indicate which steps lead to a new election and which ones do not. Justify your answer using the statuses returned by the servers.
 
 Ans:
 
-Shut down two servers, including the leader --- starting with the server that is not the leader. Report the status of the remaining servers and explain what happened.
+4. Shut down two servers, including the leader --- starting with the server that is not the leader. Report the status of the remaining servers and explain what happened.
 
 Ans:
 
-Can you perform Get, Put, or Append requests in this system state? Justify your answer.
+5. Can you perform Get, Put, or Append requests in this system state? Justify your answer.
 
 Ans:
 
-Restart the servers and note down the new status. Describe what happened.
+6. Restart the servers and note down the new status. Describe what happened.
 
 Ans:
 
