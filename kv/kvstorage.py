@@ -16,7 +16,10 @@ class KVStorage(SyncObj):
     def append(self, key, value):
         print("append key: ", key, " with value: ", value)
         #TODO: implement the Append operation, that adds the provided value to the value of the key.
-        self.__data[key].append(value)
+        try:
+            self.__data[key].append(value)
+        except Exception:
+            self.__data[key] = value
 
     def get(self, key):
         print("get key: ", key)
